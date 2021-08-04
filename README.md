@@ -1,49 +1,15 @@
-<p align="center"><a href="#"><img src="https://img.shields.io/github/languages/code-size/watchakorn-18k/Windows2019RDP-US-WK"/></a>
-<a href="#"><img src="https://img.shields.io/github/stars/watchakorn-18k/Windows2019RDP-US-WK?style=social"/></a><a href="#"><img src="https://img.shields.io/github/languages/count/watchakorn-18k/Windows2019RDP-US-WK?style=social"/></a><a href="#"><img src="https://img.shields.io/github/forks/watchakorn-18k/Windows2019RDP-US-WK?style=social"/></a>
-</p>
+# Windows2019RDP-US
+Windows Server 2019 Github with RDP Access (ngrok AP) 
+Repo link: https://github.com/mrX04/Windows2019RDP-US
 
-<h2 align="center">🪟 Windows2019RDP-US 🪟 </h2>
+Create a free VPS with 2cpu-7gb Ram FREE with Github:
 
-### Windows Server 2019 Github พร้อมการเข้าถึง RDP (ngrok US) 
-
-⚙️ ต้นฉบับ : https://github.com/docefio/Windows2019RDP-Github/ 
-
-🏗️ สร้าง RDP ฟรีพร้อม 2cpu-7gb Ram ฟรีด้วย Github:
-(แนะนำให้โหลดลงไปนะครับ)
-
-- clone ไฟล์ไป
-- สร้าง repository ขึ้นมาเปิดเป็น public
-- ทำไฟล์ทั้ง 9 ไฟล์ลากใส่ลงใน repository ก่อน
-- จากนั้นกด commit
-- จากนั้นกลับมาที่หน้าแรกของ repository 
-- เลือก Add File แล้วเลือก Create New file
-- จากนั้นพิมพ์ path ลงในช่อง Name your file... ว่า
-.github/workflows/main.yml
-- เมื่แกำหนด path เสร็จแล้ว ให้ทำการคัดลอกโค้ดที่อยู่ใน .github/workflows/main.yml ที่ทำการ clone มาเพื่อมาแก้ path
-- โดยให้เปลี่ยน 
-[ชื่อผู้ใช้] คือชื่อ github ของท่าน 
-[ชื่อ repository] คือชื่อ repository ที่ท่านสร้าง
-เช่น
-[ชื่อผู้ใช้] คือ watchakorn
-[ชื่อ repository] คือ vps-test
-- จากนั้นกด commit
-- ไปที่ https://dashboard.ngrok.com เพื่อไปเอา NGROK_AUTH_TOKEN
-- จากนั้นไปใน repository ที่สร้างขึ้นไปที่ Settings จากนั้นไป    Secrets เลือก New repository secret
-- จากนั้นจริง Name ใส่ตัวแปร NGROK_AUTH_TOKEN ลงไป
-- ไปที่เว็บไซต์ https://dashboard.ngrok.com/auth/your-authtoken คัดลอก authtoken มา
-- แล้วเอาไปวางที่ Value
-- ไปที่ Action เลือก CI จากนั้นกด Run workflow
-- รีโหลดหน้าหนึ่งครั้งแล้วกด CI จากนั้นคลิก build
-- จากนั้นรอมันโหลดจนเสร็จ
-- *อย่าลองขุด บิทคอยนะครับ ไม่งั้นจะโดนลบได้
-- *แนะนำเพิ่มเติมหลังจาก เข้าใช้งานได้แล้วให้ปิดเป็น ส่วนตัวทันที ตัว vps จะอยู่ได้ 6 ชั่วโมง
-
-🪄 อัพเดทใช้งานได้แค่ไฟลเดียว
-- โหลดได้ใน Directory ชื่อ ไฟล์เดียว
-- สร้าง path .github/workflows/main.yml
-- จากคัดลอกโค้ดในไฟล์ main.txt ใน Directory ไฟล์เดียว ไปใส่
-- จากนั้นไปใส่ TOKEN
-- แล้วก็ลอง Run ใน action
-
-[forks-url]: https://github.com/watchakorn-18k/Windows2019RDP-US-WK/network/members
-[forks-shield]: https://img.shields.io/github/forks/watchakorn-18k/Windows2019RDP-US-WK.svg?style=for-the-badge
++ Click Fork in the right corner of the screen to save it to your Github.
++ Visit https://dashboard.ngrok.com to get NGROK_AUTH_TOKEN
++ In Github go to Settings> Secrets> New repository secret
++ In Name: enter NGROK_AUTH_TOKEN
++ In Value: visit https://dashboard.ngrok.com/auth/your-authtoken Copy and Paste Your Authtoken into
++ Press Add secret
++ Go to Action> CI> Run workflow
++ Reload the page and press CI> build
++ Press the down arrow on Connect To Your RPD to get IP, User, Password.
